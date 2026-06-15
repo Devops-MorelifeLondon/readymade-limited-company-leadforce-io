@@ -46,7 +46,7 @@ export default function LandingContent({ companies }: LandingContentProps) {
     },
     {
       question: 'How long does the transfer take?',
-      answer: 'Typically 1–2 working days from signed documents to Companies House confirmation.'
+      answer: 'The transfer is instant. Once you sign the documents, ownership is transferred immediately, allowing you to start trading under your new company name right away.'
     },
     {
       question: 'Can I change the company name?',
@@ -90,7 +90,7 @@ export default function LandingContent({ companies }: LandingContentProps) {
               </h1>
 
               <p className="mt-6 text-lg sm:text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                Skip months of incorporation paperwork. Choose from pre-registered UK companies, complete the transfer in days, and start trading under your new company name immediately.
+                Skip months of incorporation paperwork. Choose from pre-registered UK companies, complete the transfer instantly, and start trading under your new company name immediately.
               </p>
 
               <div className="mt-10 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
@@ -122,6 +122,10 @@ export default function LandingContent({ companies }: LandingContentProps) {
                   <div className="flex items-center gap-2.5">
                     <span className="flex-shrink-0 flex items-center justify-center w-5 h-5 rounded-full bg-green-100 text-green-700 font-bold">✓</span>
                     <span className="text-xs sm:text-sm font-semibold text-slate-700">UK-Based Support Team</span>
+                  </div>
+                  <div className="flex items-center gap-2.5">
+                    <span className="flex-shrink-0 flex items-center justify-center w-5 h-5 rounded-full bg-green-100 text-green-700 font-bold">✓</span>
+                    <span className="text-xs sm:text-sm font-semibold text-slate-700">Instant Transfer</span>
                   </div>
                   <div className="flex items-center gap-2.5">
                     <span className="flex-shrink-0 flex items-center justify-center w-5 h-5 rounded-full bg-green-100 text-green-700 font-bold">✓</span>
@@ -245,7 +249,7 @@ export default function LandingContent({ companies }: LandingContentProps) {
               <span className="w-8 h-8 rounded-lg bg-green-600 text-white flex items-center justify-center font-bold text-sm flex-shrink-0">4</span>
               <div>
                 <h4 className="font-bold text-slate-900 text-base">Trade</h4>
-                <p className="text-sm text-slate-600 mt-1">Once Companies House confirms the changes (usually within 1–2 working days), the company is yours to operate.</p>
+                <p className="text-sm text-slate-600 mt-1">The transfer is instant. Once signed, the company is immediately yours to operate and start trading.</p>
               </div>
             </div>
           </div>
