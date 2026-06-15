@@ -12,7 +12,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title:
-    'Buy a Ready-Made UK Limited Company — Fully Registered & Ready to Trade',
+    'Buy a Ready-Made VAT UK Limited Company — Fully Registered & Ready to Trade',
   description:
     'Skip months of incorporation paperwork. Choose from pre-registered UK companies, complete the transfer in days, and start trading under your new company name immediately.',
   keywords:
