@@ -30,18 +30,17 @@ console.log( fullName, contactNumber, email, country, message, pageURL)
     // REQUIRED: formID must be included
     params.append("formID", formId);
 
-  const jotformResponse = await fetch(
-  `https://submit.jotform.com/submit/${formId}`,
-  {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/x-www-form-urlencoded",
-      "Referer": process.env.APP_URL || "https://lead-force.io",
-    },
-    body: params.toString(),
-  }
-);
-
+    const jotformResponse = await fetch(
+      `https://submit.jotform.com/submit/${formId}`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+          "Referer": process.env.APP_URL || "https://lead-force.io",
+        },
+        body: params.toString(),
+      }
+    );
 
     // Web submit returns HTML only → just check status
     if (jotformResponse.ok) {

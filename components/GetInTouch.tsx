@@ -46,7 +46,7 @@ const GetInTouchForm: React.FC<{ onSuccess?: () => void }> = ({ onSuccess }) => 
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           ...formData,
-          pageURL: window.location.pathname,
+          pageURL: window.location.href,
         }),
       });
 

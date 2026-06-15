@@ -297,9 +297,10 @@ export default function LandingContent({ companies }: LandingContentProps) {
                   href="https://wa.me/447480022706?text=Hi%2C%20I%20am%20interested%20in%20the%20Standard%20Ready-Made%20Company%20package."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full inline-flex items-center justify-center py-3 bg-[#0000ff] hover:bg-blue-600 text-white font-bold rounded-xl text-sm transition"
+                  className="w-full inline-flex items-center justify-center gap-2 py-3 bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold rounded-xl text-sm transition shadow-sm hover:shadow-md hover:scale-[1.02] duration-200 active:scale-[0.98]"
                 >
-                  Get Started
+                  <FaWhatsapp className="w-5 h-5 text-white" />
+                  Chat on WhatsApp
                 </a>
               </div>
             </div>
@@ -323,9 +324,10 @@ export default function LandingContent({ companies }: LandingContentProps) {
                   href="https://wa.me/447480022706?text=Hi%2C%20I%20am%20interested%20in%20the%20Aged%20Company%20package."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full inline-flex items-center justify-center py-3 bg-[#0000ff] hover:bg-blue-600 text-white font-bold rounded-xl text-sm transition"
+                  className="w-full inline-flex items-center justify-center gap-2 py-3 bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold rounded-xl text-sm transition shadow-sm hover:shadow-md hover:scale-[1.02] duration-200 active:scale-[0.98]"
                 >
-                  Get Started
+                  <FaWhatsapp className="w-5 h-5 text-white" />
+                  Chat on WhatsApp
                 </a>
               </div>
             </div>
@@ -349,9 +351,10 @@ export default function LandingContent({ companies }: LandingContentProps) {
                   href="https://wa.me/447480022706?text=Hi%2C%20I%20am%20interested%20in%20the%20VAT-Registered%20Company%20package."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full inline-flex items-center justify-center py-3 bg-[#0000ff] hover:bg-blue-600 text-white font-bold rounded-xl text-sm transition"
+                  className="w-full inline-flex items-center justify-center gap-2 py-3 bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold rounded-xl text-sm transition shadow-sm hover:shadow-md hover:scale-[1.02] duration-200 active:scale-[0.98]"
                 >
-                  Get Started
+                  <FaWhatsapp className="w-5 h-5 text-white" />
+                  Chat on WhatsApp
                 </a>
               </div>
             </div>
@@ -468,9 +471,10 @@ export default function LandingContent({ companies }: LandingContentProps) {
               href="https://wa.me/447480022706"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-slate-800 hover:bg-slate-700 text-slate-100 border border-slate-700 font-bold rounded-xl transition gap-2"
+              className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold rounded-xl transition gap-2 shadow-sm hover:shadow-md hover:scale-[1.02] duration-200 active:scale-[0.98]"
             >
-              Talk to Our Team →
+              <FaWhatsapp className="w-5 h-5 text-white" />
+              Talk to Our Team
             </a>
           </div>
         </div>

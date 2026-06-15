@@ -12,16 +12,16 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title:
-    'Buy UK VAT & Non-VAT Registered Companies | Fast 1–24 Hour Transfer & Full Documentation',
+    'Buy a Ready-Made UK Limited Company — Fully Registered & Ready to Trade',
   description:
-    'Purchase clean UK Limited Companies — VAT, Non-VAT, and aged companies (6 months to 5 years). Fast 1–24 hour director/share transfer, full documentation, HMRC verification, and UK bank account support.',
+    'Skip months of incorporation paperwork. Choose from pre-registered UK companies, complete the transfer in days, and start trading under your new company name immediately.',
   keywords:
     'buy UK company, UK VAT registered company for sale, buy UK non VAT company, aged UK companies, UK shelf company, ready made UK company, HMRC verified company, UK company with VAT, buy UK ltd company, UK company transfer',
   openGraph: {
     title:
-      'Buy UK VAT & Non-VAT Registered Companies | Clean, Verified, Fast Transfer',
+      'Buy a Ready-Made UK Limited Company — Fully Registered & Ready to Trade',
     description:
-      'Get VAT, Non-VAT or aged UK Limited Companies. Clean, debt-free, fully documented and transferred within 1–24 hours. HMRC & Companies House verified.',
+      'Skip months of incorporation paperwork. Choose from pre-registered UK companies, complete the transfer in days, and start trading under your new company name immediately.',
     type: 'website',
     locale: 'en_GB',
     url: process.env.NEXT_PUBLIC_BASE_URL || 'https://uk-vat.lead-force.io',
@@ -29,9 +29,9 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title:
-      'Buy UK VAT & Non-VAT Registered Companies | Fast Transfer & Full Docs',
+      'Buy a Ready-Made UK Limited Company — Fully Registered & Ready to Trade',
     description:
-      'Purchase a verified UK VAT or Non-VAT company with complete documentation and 1–24 hour transfer.',
+      'Skip months of incorporation paperwork. Choose from pre-registered UK companies, complete the transfer in days, and start trading under your new company name immediately.',
   },
   alternates: {
     canonical: process.env.NEXT_PUBLIC_BASE_URL,
