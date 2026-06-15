@@ -105,12 +105,12 @@ const GetInTouchForm: React.FC<{ onSuccess?: () => void }> = ({ onSuccess }) => 
           </div>
         </div>
       ) : (
-        <div className="bg-white p-6 shadow-md border border-gray-100 w-full">
+        <div className="bg-white p-4 sm:p-6 shadow-md border border-gray-100 w-full">
           <h2 className="text-xl font-semibold text-center mb-1 text-gray-800">
-            Get in Touch with Us
+            Request Company Transfer
           </h2>
           <p className="text-sm text-gray-500 text-center mb-5">
-            Please fill out the form below to send us your inquiries.
+            Fill in the form below to get in touch and start the transfer process.
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-4">

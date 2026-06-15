@@ -1,11 +1,11 @@
 'use client';
 
 import { useState, useMemo, useRef } from 'react';
-import { 
-  Check, 
-  ChevronDown, 
-  ArrowRight, 
-  Search, 
+import {
+  Check,
+  ChevronDown,
+  ArrowRight,
+  Search,
   ExternalLink,
   Info
 } from 'lucide-react';
@@ -25,10 +25,10 @@ interface LandingContentProps {
 
 export default function LandingContent({ companies }: LandingContentProps) {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
-  
+
   const pricingSectionRef = useRef<HTMLDivElement>(null);
   const howItWorksSectionRef = useRef<HTMLDivElement>(null);
-  
+
   const scrollToPricing = () => {
     pricingSectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
@@ -68,18 +68,23 @@ export default function LandingContent({ companies }: LandingContentProps) {
 
   return (
     <div className="relative overflow-hidden bg-white text-slate-900 font-sans">
-       {/* 1. HERO SECTION */}
-      <section className="relative pt-40 md:pt-20 py-16 lg:py-24 bg-gradient-to-b from-blue-50/70 via-slate-50 to-white text-slate-900 border-b border-slate-100">
+      {/* 1. HERO SECTION */}
+      <section className="relative px-4 sm:px-6 lg:px-8 pt-20 pb-12 md:pt-40 md:pb-20 lg:pt-44 lg:pb-24 bg-gradient-to-b from-blue-50/70 via-slate-50 to-white text-slate-900 border-b border-slate-100">
         {/* Soft Background Grid Line Overlay */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#e2e8f0_0.75px,transparent_0.75px),linear-gradient(to_bottom,#e2e8f0_0.75px,transparent_0.75px)] bg-[size:4rem_4rem] opacity-70 pointer-events-none"></div>
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-400/10 rounded-full blur-[140px] pointer-events-none"></div>
         <div className="absolute top-10 right-10 w-80 h-80 bg-indigo-300/10 rounded-full blur-[120px] pointer-events-none"></div>
-        
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            
+
+        <div className="container mx-auto px-0 sm:px-6 lg:px-8 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-center">
+
+            {/* RIGHT: JOTFORM IN WINDOW WRAPPER */}
+            <div id="contact-form" className="lg:col-span-5 w-full lg:mt-0 mt-8 order-1 lg:order-last">
+              <GetInTouchForm />
+            </div>
+
             {/* LEFT CONTENT */}
-            <div className="lg:col-span-7 text-center lg:text-left">
+            <div className="lg:col-span-7 text-center lg:text-left order-2 lg:order-first">
               <h1 className="text-4xl sm:text-5xl  font-bold tracking-tight leading-tight text-slate-900">
                 Buy a Ready-Made UK Limited Company — Fully Registered & Ready to Trade
               </h1>
@@ -126,13 +131,6 @@ export default function LandingContent({ companies }: LandingContentProps) {
               </div>
             </div>
 
-            {/* RIGHT: JOTFORM IN WINDOW WRAPPER */}
-            <div id="contact-form" className="lg:col-span-5 w-full lg:mt-0 mt-8">
-            
-              <GetInTouchForm/>
-        
-            </div>
-
           </div>
         </div>
       </section>
@@ -152,7 +150,7 @@ export default function LandingContent({ companies }: LandingContentProps) {
 
           <div className="max-w-4xl mx-auto bg-white rounded-2xl border border-slate-200/80 shadow-lg p-8 sm:p-10">
             <h3 className="text-lg font-bold text-slate-900 mb-6">Every company we provide includes:</h3>
-            
+
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-slate-700">
                 <span className="text-blue-600 font-bold mt-0.5">•</span>
@@ -172,10 +170,10 @@ export default function LandingContent({ companies }: LandingContentProps) {
                   <span className="font-semibold text-slate-900">Companies House registration</span>{' '}
                   <span className="text-slate-500">
                     (you can verify it yourself —{' '}
-                    <a 
-                      href="https://find-and-update.company-information.service.gov.uk" 
-                      target="_blank" 
-                      rel="noreferrer" 
+                    <a
+                      href="https://find-and-update.company-information.service.gov.uk"
+                      target="_blank"
+                      rel="noreferrer"
                       className="text-[#0000ff] hover:underline inline-flex items-center gap-0.5 font-medium"
                     >
                       link provided <ExternalLink className="w-3.5 h-3.5" />
@@ -226,7 +224,7 @@ export default function LandingContent({ companies }: LandingContentProps) {
                 <p className="text-sm text-slate-600 mt-1">Pick a ready-made company from our available list (by age, name, or industry classification).</p>
               </div>
             </div>
-            
+
             <div className="flex gap-4 p-5 rounded-xl border border-slate-100 bg-slate-50 items-start">
               <span className="w-8 h-8 rounded-lg bg-[#0000ff] text-white flex items-center justify-center font-bold text-sm flex-shrink-0">2</span>
               <div>
@@ -310,7 +308,7 @@ export default function LandingContent({ companies }: LandingContentProps) {
               <div>
                 <h3 className="text-xl font-bold text-slate-900 mb-4">Aged Company (12+ months)</h3>
                 <div className="flex items-baseline mb-6">
-               <span className="text-4xl font-bold text-slate-950 blur-md">£499</span>
+                  <span className="text-4xl font-bold text-slate-950 blur-md">£499</span>
                 </div>
                 <div className="border-t border-slate-100 pt-6">
                   <h4 className="font-semibold text-slate-950 text-sm mb-4">What&apos;s Included:</h4>
@@ -421,8 +419,8 @@ export default function LandingContent({ companies }: LandingContentProps) {
             {faqs.map((faq, index) => {
               const isOpen = openFaqIndex === index;
               return (
-                <div 
-                  key={index} 
+                <div
+                  key={index}
                   className="border border-slate-200 rounded-xl overflow-hidden hover:border-slate-300 transition-colors"
                 >
                   <button
@@ -430,13 +428,11 @@ export default function LandingContent({ companies }: LandingContentProps) {
                     className="w-full flex items-center justify-between p-5 bg-white hover:bg-slate-50/50 text-left font-semibold text-slate-900 focus:outline-none transition-colors"
                   >
                     <span className="pr-4">{faq.question}</span>
-                    <ChevronDown className={`w-5 h-5 text-slate-500 transition-transform duration-300 flex-shrink-0 ${
-                      isOpen ? 'rotate-180 text-blue-600' : ''
-                    }`} />
+                    <ChevronDown className={`w-5 h-5 text-slate-500 transition-transform duration-300 flex-shrink-0 ${isOpen ? 'rotate-180 text-blue-600' : ''
+                      }`} />
                   </button>
-                  <div className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                    isOpen ? 'max-h-[300px] border-t border-slate-100' : 'max-h-0'
-                  }`}>
+                  <div className={`transition-all duration-300 ease-in-out overflow-hidden ${isOpen ? 'max-h-[300px] border-t border-slate-100' : 'max-h-0'
+                    }`}>
                     <p className="p-5 text-slate-600 leading-relaxed text-sm bg-slate-50/30">
                       {faq.answer}
                     </p>
@@ -451,7 +447,7 @@ export default function LandingContent({ companies }: LandingContentProps) {
       {/* 8. FINAL CTA SECTION */}
       <section className="py-20 bg-gradient-to-br from-slate-900 via-slate-900 to-slate-950 text-white text-center relative">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_60%_at_50%_50%,rgba(0,0,255,0.12),rgba(255,255,255,0))] pointer-events-none"></div>
-        
+
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-4xl">
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight leading-tight">
             Ready to Get Started?
@@ -459,7 +455,7 @@ export default function LandingContent({ companies }: LandingContentProps) {
           <p className="mt-4 text-slate-400 text-lg max-w-2xl mx-auto">
             Browse our current list of available ready-made UK companies, or contact our team directly for a recommendation based on your needs.
           </p>
-          
+
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
             <button
               onClick={scrollToPricing}
