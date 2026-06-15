@@ -1,0 +1,24 @@
+.logo-slider-container {
+  background: white;
+  padding: 2rem 0;
+  overflow: hidden;
+}
+
+/* This rule adds the necessary gap between slides */
+.slick-slide > div {
+  padding: 0 25px;
+}
+
+.slick-logo-image {
+  height: 60px;
+  width: 100%;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+@media (max-width: 500px) {
+    .logo-slider-container{
+         padding: 1rem 0;
+    }
+   
+}
