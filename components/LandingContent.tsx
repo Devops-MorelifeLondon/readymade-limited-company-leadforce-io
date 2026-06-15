@@ -86,7 +86,7 @@ export default function LandingContent({ companies }: LandingContentProps) {
             {/* LEFT CONTENT */}
             <div className="lg:col-span-7 text-center lg:text-left order-2 lg:order-first">
               <h1 className="text-4xl sm:text-5xl  font-bold tracking-tight leading-tight text-slate-900">
-                Buy a Ready-Made UK Limited Company — Fully Registered & Ready to Trade
+                Buy a Ready-Made VAT UK Limited Company — Fully Registered & Ready to Trade
               </h1>
 
               <p className="mt-6 text-lg sm:text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
@@ -110,7 +110,7 @@ export default function LandingContent({ companies }: LandingContentProps) {
 
               {/* Trust Strip */}
               <div className="mt-12 pt-8 border-t border-slate-200/80">
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-y-6 gap-x-4 text-left">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-y-6 gap-x-4 text-left">
                   <div className="flex items-center gap-2.5">
                     <span className="flex-shrink-0 flex items-center justify-center w-5 h-5 rounded-full bg-green-100 text-green-700 font-bold">✓</span>
                     <span className="text-xs sm:text-sm font-semibold text-slate-700">Companies House Registered</span>
@@ -130,6 +130,10 @@ export default function LandingContent({ companies }: LandingContentProps) {
                   <div className="flex items-center gap-2.5">
                     <span className="flex-shrink-0 flex items-center justify-center w-5 h-5 rounded-full bg-green-100 text-green-700 font-bold">✓</span>
                     <span className="text-xs sm:text-sm font-semibold text-slate-700">500+ Companies Successfully Transferred</span>
+                  </div>
+                  <div className="flex items-center gap-2.5">
+                    <span className="flex-shrink-0 flex items-center justify-center w-5 h-5 rounded-full bg-green-100 text-green-700 font-bold">✓</span>
+                    <span className="text-xs sm:text-sm font-semibold text-slate-700">Clean & Debt-Free Guarantee</span>
                   </div>
                 </div>
               </div>
